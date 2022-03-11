@@ -2,7 +2,7 @@
 A brief example of how you can execute pagination with v1 of the Onspring API.
 
 ## Notes
-- v2 of the Onspring API does support pagination. It is highly recommend to make use of v2 of the API.
+- v2 of the Onspring API does support pagination. It is highly recommended to make use of v2 of the API.
 - This is not necessarily a step by step tutorial of how to execute this workaround.
 - Rather it is a for instance to hopefully offer an example of how this can be done.
 - My example is done using a .NET Core console application in conjuction with [RestSharp](https://restsharp.dev/) and [Newtonsoft.Json](https://www.newtonsoft.com/json).
