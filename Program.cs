@@ -25,10 +25,10 @@ namespace apiPaginationExample
             var client = new RestClient(baseUrl);
 
             // report id for report returning max record id value.
-            var maxReportId = 823;
+            var maxReportId = int.Parse(config.GetSection("maxReportId").Value);
 
             // report id for report returning min record id value.
-            var minReportId = 824;
+            var minReportId = int.Parse(config.GetSection("minReportId").Value);
 
             // resource end point to get report by id in api v1.
             var reportById = "/v1/reports/{reportId}";
@@ -87,13 +87,13 @@ namespace apiPaginationExample
             var recordsByAppId = "/v1/records/{appId}";
 
             // app id for the app I want to get records from.
-            var appId = 246;
+            var appId = int.Parse(config.GetSection("appId").Value);
 
             // field id for the field I want to use in my requests filter. I used the Record Id field.
-            var recordIdFieldId = 8967;
+            var recordIdFieldId = int.Parse(config.GetSection("recordIdFieldId").Value);
 
             // the number of records I want to bring back with each request.
-            var pageSize = 2;
+            var pageSize = int.Parse(config.GetSection("pageSize").Value);
 
             // set the bottom of my filter range to the minRecordId value.
             var index = minRecordId;
