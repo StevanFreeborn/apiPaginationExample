@@ -12,6 +12,7 @@ A brief example of how you can execute pagination with v1 of the Onspring API.
   - Better error handling
   - Accounting for failed requests and re-attemting failed requests
   - etc.
+- To understand some of the comments in the program you may need to refer to [Onspring's API v1 documentation](https://software.onspring.com/hubfs/Training/Admin%20Guide%20-%20API.pdf). Note again it is highly recommended to build integrations with V2 of the api or migrate to V2 of the api when possible.
 
 ### My Steps:
 - Onspring setup
@@ -37,3 +38,4 @@ A brief example of how you can execute pagination with v1 of the Onspring API.
     - use that range of records to build a filter for the Get Records endpoint
     - use a loop to make recurring Get Records request and increment the record range with each request until I've exceeded the max record id value.
   - Note at the end the program I write the collected records to a file, but once collected what to do next is dependent upon the use case.
+  - I've [commented the code well](Program.cs) in hopes that will help bring more clarity to my approach.
